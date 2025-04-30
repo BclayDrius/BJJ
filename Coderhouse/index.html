@@ -4,38 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Brazilian Jiu-Jitsu</title>
 </head>
 <body>
-    <div class="botones">
+    <header class="botones">
         <div class="contenedorLogo">
-            <img src="imgs/bjj.png" alt="Logo de BJJ" class="logo">
+            <a href="index.html">
+                <img src="imgs/bjj.png" alt="Logo de BJJ" class="logo">
+            </a>
         </div>
+
         <nav class="contenedorBotones">
-            <button>Conoce la historia</button>
-            <button>Mejores sumisiones</button>
-            <button>Ranking libra por libra</button>
-            <button>Mejores atletas</button>
+            <button><a href="pages/conoce_la_historia.html">Conoce la historia</a></button>
+            <button><a href="pages/mejores_sumisiones.html">Mejores sumisiones</a></button>
+            <button><a href="pages/ranking_lxl.html">Ranking libra por libra</a></button>
+            <button><a href="pages/mejores_atletas.html">Mejores atletas</a></button>
         </nav>
-    </div> 
+    </header> 
 
-    <div class="headerAndMain">
-        <header class="headerDelIndex">
-            <div>
-                <h1 id="titulo">Brazilian Jiu-Jitsu</h1>
-                <h2>Arte, Técnica y Control</h2>
+    <div class="ContenidoDeLaPagina">
+        <main class="MAINDelIndex">
+            <div class="MAINTexto">
+                <h2><span style="color: red;">Arte</span><span style="color: #183572;">, Técnica y </span><span style="color: green;">Control</span></h2>
+
+                <h1 id="titulo"></h1>
+
                 <p>Domina tu mente, perfecciona tu cuerpo.</p>
-                <button>¡Quiero saber más!</button>
-            </div>
-        </header>
-        <main>
-            <img src="imgs/triangleChoke.png" alt="Triangle Choke" class="imgPrincipal">
-            
-        </main>
-    </div>
 
-    <footer>
-        <p>&copy; 2023 Barlay Leach. All rights reserved.</p>
-    </footer>
+                <button class="botonPrincipal"><a href="pages/conoce_la_historia.html">¡QUIERO SABER MÁS!</a></button>
+            </div>
+        </main>
+        <div class="contenedorDeImagenPrincipal">
+            <div class="imgPrincipal">
+                <a href="https://youtu.be/5sX_HzPNPoM" target="_blank"></a>
+                <footer>
+                    <p>© 2025 Barclay Leach. Todos los derechos reservados.</p>
+                    <p>Contacto: barclaydario@gmail.com</p>
+                    
+                    <p>
+                        Imagen de fondo tomada de UFC 274 - Charles Oliveira vs. Justin Gaethje
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
